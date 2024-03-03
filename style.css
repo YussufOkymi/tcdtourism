@@ -1,0 +1,122 @@
+*, ::before, ::after {
+box-sizing: border-box;
+margin: 0;
+padding:0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100svh;
+    width: 100%;
+    background: no-repeat center / cover url('bg.jpg');
+}
+
+
+nav {
+    height: 80px;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+   width: 80px;
+   height: 80px;
+   margin-left: 50px;
+   margin-top: 50px;  
+}
+
+nav ul  {
+    margin-right: 50px;
+    list-style: none;
+    margin-top: 60px;
+    font-size: larger;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 7px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+}
+
+nav ul li a.active{
+    background: darkblue;
+    border-radius: 50px;
+}
+
+nav ul li a:hover{
+    background: purple;
+    border-radius: 50px;
+}
+ 
+.content {
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+.content h1 {
+    color: #f1f1f1 ;
+    font-weight: 900;
+    font-size: clamp(50px, 5vw, 70px);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content h2 {
+    text-align: center;
+    font-weight: 500;
+    color: #f1f1f1;
+    font-size: clamp(20px, 5vw, 40px);
+    margin: 20px;
+}
+
+.buttons {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+button {
+    margin: 0 1rem;
+    border: none;
+    outline:none;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    color: #f1f1f1;
+    background: rgb(10, 47, 170);
+    transition: background 0.2s ease-in-out;
+}
+
+button:hover{
+    background: purple;
+}
+button a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+h3{
+    margin: 30px;
+}
+.content h3{
+    text-align: start;
+    color: black;
+}
+.imgvilles{
+    display: flex;
+    margin: 30px;
+}
+
+.img2{
+    height: 90px;
+}
